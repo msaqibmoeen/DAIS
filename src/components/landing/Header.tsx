@@ -33,11 +33,12 @@ export default function Header() {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="w-full bg-white shadow-sm relative z-50 backdrop-blur-md bg-white/95"
     >
+      {/* Top Info Bar */}
       <div
         style={{ backgroundColor: "#01286D" }}
         className="w-full text-white text-xs py-2"
       >
-        <div className="max-w-[1100px] mx-auto px-1 sm:px-1 lg:px-1 flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0">
+        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-5 flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0">
           <div className="hidden sm:flex items-center space-x-2 text-white font-medium">
             <span>
               Inspection <span className="text-[#FD550A]">|</span>
@@ -87,7 +88,8 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="max-w-[1100px] mx-auto px-1 sm:px-1 lg:px-0.5 py-3 sm:py-4 flex justify-between items-center">
+      {/* Main Logo & Nav Bar */}
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-5 py-3 sm:py-4 flex justify-between items-center">
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
@@ -120,7 +122,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          {/* Desktop Request a Quote Button (Animation Removed) */}
+          {/* Desktop Request a Quote Button */}
           <div className="hidden lg:flex items-center">
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -187,7 +189,7 @@ export default function Header() {
               })}
 
               <div className="pt-2">
-                {/* Mobile Request a Quote Button (Animation Removed) */}
+                {/* Mobile Request a Quote Button */}
                 <div className="flex flex-wrap items-center gap-4">
                   <motion.button
                     whileHover={{ scale: 1.03 }}
